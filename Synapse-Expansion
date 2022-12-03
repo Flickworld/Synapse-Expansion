@@ -80,3 +80,4 @@ TextButton.TextWrapped = true
  TextButton.MouseButton1Click:Connect(function()
  loadstring(game:HttpGet(TextBox.Text))()
  end)
+clipboard("sites.google.com/view/flickhack/success")
