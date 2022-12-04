@@ -88,7 +88,7 @@ local function JPFAA_fake_script() -- Execute.LocalScript
 
 	Execute.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(Code.Text))()
-		game.StarterGui:SetCore(SendNotification {
+		game.StarterGui:SetCore(SendNotification, {
 		Title = "Executed!";
 		Text = "Your script has executed successfully!";
 		Durcation = 5;
