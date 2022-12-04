@@ -1,0 +1,101 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Loading...";
+	Text = "Loading Up Executer...";
+	Durcation = 5;
+})
+wait(math.random(5, 25))
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Finished!";
+	Text = "Finished Loading Executer!";
+	Durcation = 5;
+})
+
+-- GUI to Lua
+-----
+-- Version: 2.0.
+-- Made by chrisopdemobiel.
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+local Code = Instance.new("TextBox")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.086268872, 0, 0.136217952, 0)
+Frame.Size = UDim2.new(0, 342, 0, 227)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.Size = UDim2.new(0, 342, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Figit Executer"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.Position = UDim2.new(0, 0, 0.559471369, 0)
+Execute.Size = UDim2.new(0, 342, 0, 50)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = Frame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.Position = UDim2.new(0, 0, 0.779735684, 0)
+Exit.Size = UDim2.new(0, 342, 0, 50)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+Code.Name = "Code"
+Code.Parent = Frame
+Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Code.Position = UDim2.new(0, 0, 0.220264316, 0)
+Code.Size = UDim2.new(0, 342, 0, 77)
+Code.Font = Enum.Font.SourceSans
+Code.Text = "GitHub Content"
+Code.TextColor3 = Color3.fromRGB(0, 0, 0)
+Code.TextScaled = true
+Code.TextSize = 14.000
+Code.TextWrapped = true
+
+-- Scripts:
+
+local function JPFAA_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	Execute.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(Code.Text))()
+	end)
+end
+coroutine.wrap(JPFAA_fake_script)()
+local function JLCVMLS_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	Exit.MouseButton1Click:Connect(function()
+		ScreenGui:Destroy()
+	end)
+end
+coroutine.wrap(JLCVMLS_fake_script)()
