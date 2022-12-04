@@ -1,0 +1,97 @@
+-- GUI to Lua
+-----
+-- Version: 2.0.
+-- Made by chrisopdemobiel.
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Title = Instance.new("TextLabel")
+local InfectionSmile = Instance.new("TextButton")
+local PlamenHacks = Instance.new("TextButton")
+local Memes = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Size = UDim2.new(0, 255, 0, 312)
+
+Title.Name = "Title"
+Title.Parent = ScrollingFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.Size = UDim2.new(0, 242, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Figit Script Library"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+InfectionSmile.Name = "InfectionSmile"
+InfectionSmile.Parent = ScrollingFrame
+InfectionSmile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfectionSmile.Position = UDim2.new(0, 0, 0.0400641114, 0)
+InfectionSmile.Size = UDim2.new(0, 242, 0, 50)
+InfectionSmile.Font = Enum.Font.SourceSans
+InfectionSmile.Text = "Infectionous Smile"
+InfectionSmile.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfectionSmile.TextScaled = true
+InfectionSmile.TextSize = 14.000
+InfectionSmile.TextWrapped = true
+
+PlamenHacks.Name = "PlamenHacks"
+PlamenHacks.Parent = ScrollingFrame
+PlamenHacks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlamenHacks.Position = UDim2.new(0, 0, 0.0801282153, 0)
+PlamenHacks.Size = UDim2.new(0, 242, 0, 50)
+PlamenHacks.Font = Enum.Font.SourceSans
+PlamenHacks.Text = "Plamen Doors Entity Spawner Hacks"
+PlamenHacks.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlamenHacks.TextScaled = true
+PlamenHacks.TextSize = 14.000
+PlamenHacks.TextWrapped = true
+
+Memes.Name = "Memes"
+Memes.Parent = ScrollingFrame
+Memes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Memes.Position = UDim2.new(0, 0, 0.120192289, 0)
+Memes.Size = UDim2.new(0, 242, 0, 50)
+Memes.Font = Enum.Font.SourceSans
+Memes.Text = "Making Memes At 3AM Hacks"
+Memes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Memes.TextScaled = true
+Memes.TextSize = 14.000
+Memes.TextWrapped = true
+
+-- Scripts:
+
+local function IWVO_fake_script() -- InfectionSmile.LocalScript 
+	local script = Instance.new('LocalScript', InfectionSmile)
+
+	InfectionSmile.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Flickworld/Infectionous-Smile-Hack-Roblox/main/Main-Code'))()
+	end)
+end
+coroutine.wrap(IWVO_fake_script)()
+local function WUMKV_fake_script() -- PlamenHacks.LocalScript 
+	local script = Instance.new('LocalScript', PlamenHacks)
+
+	PlamenHacks.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()
+	end)
+end
+coroutine.wrap(WUMKV_fake_script)()
+local function SHIJJ_fake_script() -- Memes.LocalScript 
+	local script = Instance.new('LocalScript', Memes)
+
+	Memes.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stitchTheElite/luascripts/main/mmiyba3A%20tycoon.lua", true))()
+	end)
+end
+coroutine.wrap(SHIJJ_fake_script)()
