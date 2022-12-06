@@ -27,7 +27,7 @@ Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Start.Position = UDim2.new(0, 0, 0.816176474, 0)
 Start.Size = UDim2.new(0, 225, 0, 50)
 Start.Font = Enum.Font.SourceSans
-Start.Text = "Start Agree And Auto-Grind Now!"
+Start.Text = "Agree And Auto-Grind Now!"
 Start.TextColor3 = Color3.fromRGB(0, 0, 0)
 Start.TextScaled = true
 Start.TextSize = 14.000
@@ -46,7 +46,7 @@ Info.TextWrapped = true
 
 -- Scripts:
 
-local function EAMB_fake_script() -- Start.LocalScript 
+local function NSBKV_fake_script() -- Start.LocalScript 
 	local script = Instance.new('LocalScript', Start)
 
 	Start.MouseButton1Click:Connect(function()
@@ -125,24 +125,25 @@ local function EAMB_fake_script() -- Start.LocalScript
 		
 		
 		while true do
+			local Time = 0.7
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location2.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location3.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location4.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location5.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location6.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location7.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location8.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Location9.CFrame
-			wait(2)
+			wait(Time)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = LocationFinal.CFrame
 			wait(20)
 		end
@@ -150,4 +151,4 @@ local function EAMB_fake_script() -- Start.LocalScript
 		
 	end)
 end
-coroutine.wrap(EAMB_fake_script)()
+coroutine.wrap(NSBKV_fake_script)()
