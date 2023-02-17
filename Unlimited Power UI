@@ -4,6 +4,7 @@ local Title = Instance.new("TextLabel")
 local HideUI = Instance.new("TextButton")
 local FireServerEvent = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
+local Speedy = Instance.new("TextButton")
 local Startup = Instance.new("Frame")
 local Title_2 = Instance.new("TextLabel")
 local StartingUp = Instance.new("TextLabel")
@@ -28,7 +29,6 @@ UI.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 UI.BorderColor3 = Color3.fromRGB(69, 79, 74)
 UI.Position = UDim2.new(0.378145218, 0, 0.237179473, 0)
 UI.Size = UDim2.new(0, 339, 0, 327)
-UI.Visible = false
 
 Title.Name = "Title"
 Title.Parent = UI
@@ -62,12 +62,22 @@ FireServerEvent.TextSize = 14.000
 Credits.Name = "Credits"
 Credits.Parent = UI
 Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Credits.Position = UDim2.new(0, 0, 0.324159026, 0)
+Credits.Position = UDim2.new(0, 0, 0.553516865, 0)
 Credits.Size = UDim2.new(0, 339, 0, 36)
 Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 14.000
+
+Speedy.Name = "Speedy"
+Speedy.Parent = UI
+Speedy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Speedy.Position = UDim2.new(0, 0, 0.336391449, 0)
+Speedy.Size = UDim2.new(0, 339, 0, 36)
+Speedy.Font = Enum.Font.SourceSans
+Speedy.Text = "Speedy"
+Speedy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speedy.TextSize = 14.000
 
 Startup.Name = "Startup"
 Startup.Parent = Main
@@ -186,7 +196,7 @@ TheCredits.TextWrapped = true
 
 -- Scripts:
 
-local function OWHQJ_fake_script() -- HideUI.HideUIScript 
+local function ZXQPKU_fake_script() -- HideUI.HideUIScript 
 	local script = Instance.new('LocalScript', HideUI)
 
 	HideUI.MouseButton1Click:Connect(function()
@@ -194,16 +204,16 @@ local function OWHQJ_fake_script() -- HideUI.HideUIScript
 		ShowUI.Visible = true
 	end)
 end
-coroutine.wrap(OWHQJ_fake_script)()
-local function PTZG_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
+coroutine.wrap(ZXQPKU_fake_script)()
+local function YLDY_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
 	local script = Instance.new('LocalScript', FireServerEvent)
 
 	FireServerEvent.MouseButton1Click:Connect(function()
 		FireServerEventSetup.Visible = true
 	end)
 end
-coroutine.wrap(PTZG_fake_script)()
-local function EGZH_fake_script() -- Credits.ShowCreditsScript 
+coroutine.wrap(YLDY_fake_script)()
+local function UKWZVL_fake_script() -- Credits.ShowCreditsScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	Credits.MouseButton1Click:Connect(function()
@@ -212,8 +222,16 @@ local function EGZH_fake_script() -- Credits.ShowCreditsScript
 		CreditsScreen.Visible = false
 	end)
 end
-coroutine.wrap(EGZH_fake_script)()
-local function GEQKJV_fake_script() -- Startup.StartupScript 
+coroutine.wrap(UKWZVL_fake_script)()
+local function QXRJI_fake_script() -- Speedy.SpeedyScript 
+	local script = Instance.new('LocalScript', Speedy)
+
+	Speedy.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Speed = 50
+	end)
+end
+coroutine.wrap(QXRJI_fake_script)()
+local function CWIKNHV_fake_script() -- Startup.StartupScript 
 	local script = Instance.new('LocalScript', Startup)
 
 	wait(1)
@@ -223,8 +241,8 @@ local function GEQKJV_fake_script() -- Startup.StartupScript
 	wait(1)
 	UI.Visible = true
 end
-coroutine.wrap(GEQKJV_fake_script)()
-local function VXCMC_fake_script() -- ShowUI.ShowUIScript 
+coroutine.wrap(CWIKNHV_fake_script)()
+local function FCIOWMZ_fake_script() -- ShowUI.ShowUIScript 
 	local script = Instance.new('LocalScript', ShowUI)
 
 	ShowUI.MouseButton1Click:Connect(function()
@@ -232,8 +250,8 @@ local function VXCMC_fake_script() -- ShowUI.ShowUIScript
 		UI.Visible = true
 	end)
 end
-coroutine.wrap(VXCMC_fake_script)()
-local function PZAP_fake_script() -- Fire.FireEventScript 
+coroutine.wrap(FCIOWMZ_fake_script)()
+local function GMTTR_fake_script() -- Fire.FireEventScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	Fire.MouseButton1Click:Connect(function()
@@ -241,4 +259,4 @@ local function PZAP_fake_script() -- Fire.FireEventScript
 		game.ReplicatedStorage:GetChildren(Event.Text):FireServer(Data.Text)
 	end)
 end
-coroutine.wrap(PZAP_fake_script)()
+coroutine.wrap(GMTTR_fake_script)()
