@@ -29,6 +29,7 @@ UI.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 UI.BorderColor3 = Color3.fromRGB(69, 79, 74)
 UI.Position = UDim2.new(0.378145218, 0, 0.237179473, 0)
 UI.Size = UDim2.new(0, 339, 0, 327)
+UI.Visible = false
 
 Title.Name = "Title"
 Title.Parent = UI
@@ -196,7 +197,7 @@ TheCredits.TextWrapped = true
 
 -- Scripts:
 
-local function ZXQPKU_fake_script() -- HideUI.HideUIScript 
+local function IGUOEMU_fake_script() -- HideUI.HideUIScript 
 	local script = Instance.new('LocalScript', HideUI)
 
 	HideUI.MouseButton1Click:Connect(function()
@@ -204,16 +205,16 @@ local function ZXQPKU_fake_script() -- HideUI.HideUIScript
 		ShowUI.Visible = true
 	end)
 end
-coroutine.wrap(ZXQPKU_fake_script)()
-local function YLDY_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
+coroutine.wrap(IGUOEMU_fake_script)()
+local function WZZH_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
 	local script = Instance.new('LocalScript', FireServerEvent)
 
 	FireServerEvent.MouseButton1Click:Connect(function()
 		FireServerEventSetup.Visible = true
 	end)
 end
-coroutine.wrap(YLDY_fake_script)()
-local function UKWZVL_fake_script() -- Credits.ShowCreditsScript 
+coroutine.wrap(WZZH_fake_script)()
+local function UJTKZAF_fake_script() -- Credits.ShowCreditsScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	Credits.MouseButton1Click:Connect(function()
@@ -222,16 +223,16 @@ local function UKWZVL_fake_script() -- Credits.ShowCreditsScript
 		CreditsScreen.Visible = false
 	end)
 end
-coroutine.wrap(UKWZVL_fake_script)()
-local function QXRJI_fake_script() -- Speedy.SpeedyScript 
+coroutine.wrap(UJTKZAF_fake_script)()
+local function OCQIZR_fake_script() -- Speedy.SpeedyScript 
 	local script = Instance.new('LocalScript', Speedy)
 
 	Speedy.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Speed = 50
 	end)
 end
-coroutine.wrap(QXRJI_fake_script)()
-local function CWIKNHV_fake_script() -- Startup.StartupScript 
+coroutine.wrap(OCQIZR_fake_script)()
+local function RPWSJF_fake_script() -- Startup.StartupScript 
 	local script = Instance.new('LocalScript', Startup)
 
 	wait(1)
@@ -241,8 +242,8 @@ local function CWIKNHV_fake_script() -- Startup.StartupScript
 	wait(1)
 	UI.Visible = true
 end
-coroutine.wrap(CWIKNHV_fake_script)()
-local function FCIOWMZ_fake_script() -- ShowUI.ShowUIScript 
+coroutine.wrap(RPWSJF_fake_script)()
+local function EFMIM_fake_script() -- ShowUI.ShowUIScript 
 	local script = Instance.new('LocalScript', ShowUI)
 
 	ShowUI.MouseButton1Click:Connect(function()
@@ -250,8 +251,8 @@ local function FCIOWMZ_fake_script() -- ShowUI.ShowUIScript
 		UI.Visible = true
 	end)
 end
-coroutine.wrap(FCIOWMZ_fake_script)()
-local function GMTTR_fake_script() -- Fire.FireEventScript 
+coroutine.wrap(EFMIM_fake_script)()
+local function UTAQX_fake_script() -- Fire.FireEventScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	Fire.MouseButton1Click:Connect(function()
@@ -259,4 +260,4 @@ local function GMTTR_fake_script() -- Fire.FireEventScript
 		game.ReplicatedStorage:GetChildren(Event.Text):FireServer(Data.Text)
 	end)
 end
-coroutine.wrap(GMTTR_fake_script)()
+coroutine.wrap(UTAQX_fake_script)()
