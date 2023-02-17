@@ -186,7 +186,7 @@ TheCredits.TextWrapped = true
 
 -- Scripts:
 
-local function LFBS_fake_script() -- HideUI.HideUIScript 
+local function OWHQJ_fake_script() -- HideUI.HideUIScript 
 	local script = Instance.new('LocalScript', HideUI)
 
 	HideUI.MouseButton1Click:Connect(function()
@@ -194,16 +194,16 @@ local function LFBS_fake_script() -- HideUI.HideUIScript
 		ShowUI.Visible = true
 	end)
 end
-coroutine.wrap(LFBS_fake_script)()
-local function HIYD_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
+coroutine.wrap(OWHQJ_fake_script)()
+local function PTZG_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
 	local script = Instance.new('LocalScript', FireServerEvent)
 
 	FireServerEvent.MouseButton1Click:Connect(function()
 		FireServerEventSetup.Visible = true
 	end)
 end
-coroutine.wrap(HIYD_fake_script)()
-local function SMXJ_fake_script() -- Credits.ShowCreditsScript 
+coroutine.wrap(PTZG_fake_script)()
+local function EGZH_fake_script() -- Credits.ShowCreditsScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	Credits.MouseButton1Click:Connect(function()
@@ -212,8 +212,8 @@ local function SMXJ_fake_script() -- Credits.ShowCreditsScript
 		CreditsScreen.Visible = false
 	end)
 end
-coroutine.wrap(SMXJ_fake_script)()
-local function IYKOEJ_fake_script() -- Startup.StartupScript 
+coroutine.wrap(EGZH_fake_script)()
+local function GEQKJV_fake_script() -- Startup.StartupScript 
 	local script = Instance.new('LocalScript', Startup)
 
 	wait(1)
@@ -223,8 +223,8 @@ local function IYKOEJ_fake_script() -- Startup.StartupScript
 	wait(1)
 	UI.Visible = true
 end
-coroutine.wrap(IYKOEJ_fake_script)()
-local function MWZGI_fake_script() -- ShowUI.ShowUIScript 
+coroutine.wrap(GEQKJV_fake_script)()
+local function VXCMC_fake_script() -- ShowUI.ShowUIScript 
 	local script = Instance.new('LocalScript', ShowUI)
 
 	ShowUI.MouseButton1Click:Connect(function()
@@ -232,13 +232,13 @@ local function MWZGI_fake_script() -- ShowUI.ShowUIScript
 		UI.Visible = true
 	end)
 end
-coroutine.wrap(MWZGI_fake_script)()
-local function MYXND_fake_script() -- Fire.FireEventScript 
+coroutine.wrap(VXCMC_fake_script)()
+local function PZAP_fake_script() -- Fire.FireEventScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	Fire.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage:GetChildren(Event.Text):FireServer(Data.Text)
 		FireServerEventSetup.Visible = false
+		game.ReplicatedStorage:GetChildren(Event.Text):FireServer(Data.Text)
 	end)
 end
-coroutine.wrap(MYXND_fake_script)()
+coroutine.wrap(PZAP_fake_script)()
