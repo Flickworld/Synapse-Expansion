@@ -1,0 +1,244 @@
+local Main = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local HideUI = Instance.new("TextButton")
+local FireServerEvent = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local Startup = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local StartingUp = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+local ShowUI = Instance.new("TextButton")
+local FireServerEventSetup = Instance.new("Frame")
+local Event = Instance.new("TextBox")
+local Data = Instance.new("TextBox")
+local Fire = Instance.new("TextButton")
+local CreditsScreen = Instance.new("Frame")
+local TheCredits = Instance.new("TextLabel")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI.Name = "UI"
+UI.Parent = Main
+UI.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI.BorderColor3 = Color3.fromRGB(69, 79, 74)
+UI.Position = UDim2.new(0.378145218, 0, 0.237179473, 0)
+UI.Size = UDim2.new(0, 339, 0, 327)
+UI.Visible = false
+
+Title.Name = "Title"
+Title.Parent = UI
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.Size = UDim2.new(0, 339, 0, 20)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Unlimited Power UI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+HideUI.Name = "HideUI"
+HideUI.Parent = UI
+HideUI.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+HideUI.Position = UDim2.new(0, 0, 0.886850119, 0)
+HideUI.Size = UDim2.new(0, 339, 0, 37)
+HideUI.Font = Enum.Font.SourceSans
+HideUI.Text = "Hide UI"
+HideUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideUI.TextSize = 14.000
+
+FireServerEvent.Name = "FireServerEvent"
+FireServerEvent.Parent = UI
+FireServerEvent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FireServerEvent.Position = UDim2.new(0, 0, 0.122324161, 0)
+FireServerEvent.Size = UDim2.new(0, 339, 0, 36)
+FireServerEvent.Font = Enum.Font.SourceSans
+FireServerEvent.Text = "Fire Server Event"
+FireServerEvent.TextColor3 = Color3.fromRGB(255, 255, 255)
+FireServerEvent.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = UI
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.Position = UDim2.new(0, 0, 0.324159026, 0)
+Credits.Size = UDim2.new(0, 339, 0, 36)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+Startup.Name = "Startup"
+Startup.Parent = Main
+Startup.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Startup.Position = UDim2.new(0.351545632, 0, 0.283653855, 0)
+Startup.Size = UDim2.new(0, 412, 0, 269)
+Startup.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = Startup
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.Size = UDim2.new(0, 412, 0, 56)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Unlimited Power UI"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+StartingUp.Name = "StartingUp"
+StartingUp.Parent = Startup
+StartingUp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StartingUp.Position = UDim2.new(0, 0, 0.408921927, 0)
+StartingUp.Size = UDim2.new(0, 412, 0, 50)
+StartingUp.Font = Enum.Font.SourceSans
+StartingUp.Text = "Starting up..."
+StartingUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+StartingUp.TextScaled = true
+StartingUp.TextSize = 14.000
+StartingUp.TextWrapped = true
+
+Credit.Name = "Credit"
+Credit.Parent = Startup
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.Position = UDim2.new(0, 0, 0.814126372, 0)
+Credit.Size = UDim2.new(0, 412, 0, 50)
+Credit.Font = Enum.Font.SourceSans
+Credit.Text = "By The Figit Club"
+Credit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credit.TextScaled = true
+Credit.TextSize = 14.000
+Credit.TextWrapped = true
+
+ShowUI.Name = "ShowUI"
+ShowUI.Parent = Main
+ShowUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShowUI.Position = UDim2.new(0, 0, 0.18910256, 0)
+ShowUI.Size = UDim2.new(0, 59, 0, 50)
+ShowUI.Visible = false
+ShowUI.Font = Enum.Font.SourceSans
+ShowUI.Text = ">"
+ShowUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShowUI.TextScaled = true
+ShowUI.TextSize = 14.000
+ShowUI.TextWrapped = true
+
+FireServerEventSetup.Name = "FireServerEventSetup"
+FireServerEventSetup.Parent = Main
+FireServerEventSetup.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+FireServerEventSetup.Position = UDim2.new(0.393961191, 0, 0.278846174, 0)
+FireServerEventSetup.Size = UDim2.new(0, 294, 0, 275)
+FireServerEventSetup.Visible = false
+
+Event.Name = "Event"
+Event.Parent = FireServerEventSetup
+Event.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Event.Size = UDim2.new(0, 294, 0, 50)
+Event.Font = Enum.Font.SourceSans
+Event.Text = "Event"
+Event.TextColor3 = Color3.fromRGB(0, 0, 0)
+Event.TextScaled = true
+Event.TextSize = 14.000
+Event.TextWrapped = true
+
+Data.Name = "Data"
+Data.Parent = FireServerEventSetup
+Data.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Data.Position = UDim2.new(0, 0, 0.407272726, 0)
+Data.Size = UDim2.new(0, 294, 0, 50)
+Data.Font = Enum.Font.SourceSans
+Data.Text = "Data"
+Data.TextColor3 = Color3.fromRGB(0, 0, 0)
+Data.TextScaled = true
+Data.TextSize = 14.000
+Data.TextWrapped = true
+
+Fire.Name = "Fire"
+Fire.Parent = FireServerEventSetup
+Fire.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fire.Position = UDim2.new(0, 0, 0.818181813, 0)
+Fire.Size = UDim2.new(0, 294, 0, 50)
+Fire.Font = Enum.Font.SourceSans
+Fire.Text = "Fire"
+Fire.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fire.TextScaled = true
+Fire.TextSize = 14.000
+Fire.TextWrapped = true
+
+CreditsScreen.Name = "CreditsScreen"
+CreditsScreen.Parent = Main
+CreditsScreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsScreen.Position = UDim2.new(0.378145218, 0, 0.237179488, 0)
+CreditsScreen.Size = UDim2.new(0, 339, 0, 327)
+CreditsScreen.Visible = false
+
+TheCredits.Name = "TheCredits"
+TheCredits.Parent = CreditsScreen
+TheCredits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TheCredits.Size = UDim2.new(0, 339, 0, 327)
+TheCredits.Font = Enum.Font.SourceSans
+TheCredits.Text = "All Of This Was Made By The Figit Club"
+TheCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+TheCredits.TextScaled = true
+TheCredits.TextSize = 14.000
+TheCredits.TextWrapped = true
+
+-- Scripts:
+
+local function LFBS_fake_script() -- HideUI.HideUIScript 
+	local script = Instance.new('LocalScript', HideUI)
+
+	HideUI.MouseButton1Click:Connect(function()
+		UI.Visible = false
+		ShowUI.Visible = true
+	end)
+end
+coroutine.wrap(LFBS_fake_script)()
+local function HIYD_fake_script() -- FireServerEvent.ShowFireServerEventSetupScript 
+	local script = Instance.new('LocalScript', FireServerEvent)
+
+	FireServerEvent.MouseButton1Click:Connect(function()
+		FireServerEventSetup.Visible = true
+	end)
+end
+coroutine.wrap(HIYD_fake_script)()
+local function SMXJ_fake_script() -- Credits.ShowCreditsScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	Credits.MouseButton1Click:Connect(function()
+		CreditsScreen.Visible = true
+		wait(10)
+		CreditsScreen.Visible = false
+	end)
+end
+coroutine.wrap(SMXJ_fake_script)()
+local function IYKOEJ_fake_script() -- Startup.StartupScript 
+	local script = Instance.new('LocalScript', Startup)
+
+	wait(1)
+	Startup.Visible = true
+	wait(5)
+	Startup.Visible = false
+	wait(1)
+	UI.Visible = true
+end
+coroutine.wrap(IYKOEJ_fake_script)()
+local function MWZGI_fake_script() -- ShowUI.ShowUIScript 
+	local script = Instance.new('LocalScript', ShowUI)
+
+	ShowUI.MouseButton1Click:Connect(function()
+		ShowUI.Visible = false
+		UI.Visible = true
+	end)
+end
+coroutine.wrap(MWZGI_fake_script)()
+local function MYXND_fake_script() -- Fire.FireEventScript 
+	local script = Instance.new('LocalScript', Fire)
+
+	Fire.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage:GetChildren(Event.Text):FireServer(Data.Text)
+		FireServerEventSetup.Visible = false
+	end)
+end
+coroutine.wrap(MYXND_fake_script)()
