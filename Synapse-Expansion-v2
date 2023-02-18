@@ -12,7 +12,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Warning";
-	Text = "We are able to ban you at any time.";
+	Text = "We are able to ban you from the executer at any time.";
 	Durcation = 5;
 })
 
