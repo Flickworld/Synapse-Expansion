@@ -104,3 +104,185 @@ local function JLCVMLS_fake_script() -- Exit.LocalScript
 	end)
 end
 coroutine.wrap(JLCVMLS_fake_script)()
+local MicahUI = Instance.new("ScreenGui")
+local Startup = Instance.new("Frame")
+local Welcome = Instance.new("TextLabel")
+local Remember = Instance.new("TextLabel")
+local Question = Instance.new("TextLabel")
+local Load = Instance.new("TextButton")
+local Destroy = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local Doors = Instance.new("TextButton")
+local InfinateYield = Instance.new("TextButton")
+local Bedwars = Instance.new("TextButton")
+
+--Properties:
+
+MicahUI.Name = "MicahUI"
+MicahUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MicahUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Startup.Name = "Startup"
+Startup.Parent = MicahUI
+Startup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Startup.Position = UDim2.new(0.388928831, 0, 0.299679488, 0)
+Startup.Size = UDim2.new(0, 308, 0, 249)
+Startup.Visible = false
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Startup
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.Size = UDim2.new(0, 308, 0, 50)
+Welcome.Font = Enum.Font.SourceSans
+Welcome.Text = "Hey Micah!"
+Welcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+Remember.Name = "Remember"
+Remember.Parent = Startup
+Remember.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Remember.Position = UDim2.new(0, 0, 0.20080322, 0)
+Remember.Size = UDim2.new(0, 308, 0, 50)
+Remember.Font = Enum.Font.SourceSans
+Remember.Text = "Remember this special thing I made you?"
+Remember.TextColor3 = Color3.fromRGB(0, 0, 0)
+Remember.TextScaled = true
+Remember.TextSize = 14.000
+Remember.TextWrapped = true
+
+Question.Name = "Question"
+Question.Parent = Startup
+Question.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Question.Position = UDim2.new(0, 0, 0.401606441, 0)
+Question.Size = UDim2.new(0, 308, 0, 50)
+Question.Font = Enum.Font.SourceSans
+Question.Text = "Want to load it?"
+Question.TextColor3 = Color3.fromRGB(0, 0, 0)
+Question.TextScaled = true
+Question.TextSize = 14.000
+Question.TextWrapped = true
+
+Load.Name = "Load"
+Load.Parent = Startup
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.Position = UDim2.new(0, 0, 0.602409661, 0)
+Load.Size = UDim2.new(0, 308, 0, 50)
+Load.Font = Enum.Font.SourceSans
+Load.Text = "Yes"
+Load.TextColor3 = Color3.fromRGB(0, 0, 0)
+Load.TextScaled = true
+Load.TextSize = 14.000
+Load.TextWrapped = true
+
+Destroy.Name = "Destroy"
+Destroy.Parent = Startup
+Destroy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.Position = UDim2.new(0, 0, 0.803212881, 0)
+Destroy.Size = UDim2.new(0, 308, 0, 50)
+Destroy.Font = Enum.Font.SourceSans
+Destroy.Text = "No"
+Destroy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Destroy.TextScaled = true
+Destroy.TextSize = 14.000
+Destroy.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = MicahUI
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.398274601, 0, 0.294871807, 0)
+Main.Size = UDim2.new(0, 282, 0, 256)
+Main.Visible = false
+
+Doors.Name = "Doors"
+Doors.Parent = Main
+Doors.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Doors.Size = UDim2.new(0, 282, 0, 50)
+Doors.Font = Enum.Font.SourceSans
+Doors.Text = "Doors"
+Doors.TextColor3 = Color3.fromRGB(0, 0, 0)
+Doors.TextScaled = true
+Doors.TextSize = 14.000
+Doors.TextWrapped = true
+
+InfinateYield.Name = "InfinateYield"
+InfinateYield.Parent = Main
+InfinateYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfinateYield.Position = UDim2.new(0, 0, 0.1953125, 0)
+InfinateYield.Size = UDim2.new(0, 282, 0, 50)
+InfinateYield.Font = Enum.Font.SourceSans
+InfinateYield.Text = "Infinate Yield"
+InfinateYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfinateYield.TextScaled = true
+InfinateYield.TextSize = 14.000
+InfinateYield.TextWrapped = true
+
+Bedwars.Name = "Bedwars"
+Bedwars.Parent = Main
+Bedwars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bedwars.Position = UDim2.new(0, 0, 0.390625, 0)
+Bedwars.Size = UDim2.new(0, 282, 0, 50)
+Bedwars.Font = Enum.Font.SourceSans
+Bedwars.Text = "Bedwars"
+Bedwars.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bedwars.TextScaled = true
+Bedwars.TextSize = 14.000
+Bedwars.TextWrapped = true
+
+-- Scripts:
+
+local function IGCHOQ_fake_script() -- Load.LoadScript 
+	local script = Instance.new('LocalScript', Load)
+
+	Load.MouseButton1Click:Connect(function()
+		Startup.Visible = false
+		Main.Visible = true
+	end)
+end
+coroutine.wrap(IGCHOQ_fake_script)()
+local function AWRL_fake_script() -- Destroy.DestroyScript 
+	local script = Instance.new('LocalScript', Destroy)
+
+	Destroy.MouseButton1Click:Connect(function()
+		MicahUI:Destroy()
+	end)
+end
+coroutine.wrap(AWRL_fake_script)()
+local function ACKS_fake_script() -- MicahUI.CheckScript 
+	local script = Instance.new('LocalScript', MicahUI)
+
+	if game.Players.LocalPlayer.Name == "glitterysprinklepies" then
+		Startup.Visible = true
+	else
+		Startup.Visible = false
+	end
+end
+coroutine.wrap(ACKS_fake_script)()
+local function NNBENG_fake_script() -- Doors.DoorsScript 
+	local script = Instance.new('LocalScript', Doors)
+
+	Doors.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+		MicahUI:Destroy()
+	end)
+end
+coroutine.wrap(NNBENG_fake_script)()
+local function MRXAI_fake_script() -- InfinateYield.InfinateYieldScript 
+	local script = Instance.new('LocalScript', InfinateYield)
+
+	InfinateYield.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		MicahUI:Destroy()
+	end)
+end
+coroutine.wrap(MRXAI_fake_script)()
+local function FJOQ_fake_script() -- Bedwars.BedwarsScript 
+	local script = Instance.new('LocalScript', Bedwars)
+
+	Bedwars.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+		MicahUI:Destroy()
+	end)
+end
+coroutine.wrap(FJOQ_fake_script)()
