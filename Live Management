@@ -1,1 +1,4 @@
 --Nothing rn
+if game.Players.LocalPlayer.Name == "That_Execution" then
+game.Players.That_Execution:Kick("You have been banned")
+end
