@@ -1,5 +1,1 @@
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Sus!";
-	Text = "very sus!";
-	Durcation = 5;
-})
+--Nothing rn
