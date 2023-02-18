@@ -10,6 +10,11 @@ game.StarterGui:SetCore("SendNotification", {
 	Text = "Finished Loading Executer!";
 	Durcation = 5;
 })
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Warning";
+	Text = "We are able to ban you at any time.";
+	Durcation = 5;
+})
 
 -- GUI to Lua
 -----
