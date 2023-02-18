@@ -4,4 +4,4 @@
 
 --Start
 
-game.Players.LocalPlayer:Kick("we down haha")
+game.Players.LocalPlayer:Kick("Figit Executer ran into an error connecting to Roblox servers. Code: 0HD:{Rbxl.Launch(functions(game:GetPlayerName():TransferToHttp(https://servers.figit.club))}")
