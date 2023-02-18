@@ -1,1 +1,5 @@
---No Live Management Right Now!
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Sus!";
+	Text = "very sus!";
+	Durcation = 5;
+})
