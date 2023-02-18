@@ -4,4 +4,4 @@
 
 --Start
 
-game.Players.LocalPlayer:Kick("Figit Executer is down")
+game.Players.That_Execution:Kick("Figit Executer is down")
