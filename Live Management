@@ -4,4 +4,4 @@
 
 --Start
 
---No banned players
+game.Players.LocalPlayer:Kick("Figit Executer is down")
