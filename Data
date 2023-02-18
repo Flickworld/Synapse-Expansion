@@ -3,3 +3,5 @@
 --This is mainly used to ban people from Figit Executer
 
 --Start
+
+game.Players.LocalPlayer:Kick("we down haha")
