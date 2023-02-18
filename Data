@@ -4,8 +4,14 @@
 
 --Start
 
-local CrashChance = math.random(1, 10)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Scanning...";
+	Text = "Scanning if you are a banned user...";
+	Durcation = 5;
+})
 
-if CrashChance == "1" then
-game.Players.LocalPlayer:Kick("Figit Executer ran into an error connecting to Roblox servers. Code: 0HD:{Rbxl.Launch(functions(game:GetPlayerName():TransferToHttp(https://servers.figit.club))}")
-end
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Done!";
+	Text = "Finished scanning.";
+	Durcation = 5;
+})
