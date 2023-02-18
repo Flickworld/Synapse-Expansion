@@ -3,5 +3,3 @@
 --This is mainly used to ban people from Figit Executer
 
 --Start
-
-game.Players.That_Execution:Kick()
