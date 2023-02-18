@@ -1,4 +1,7 @@
---Nothing rn
-if game.Players.LocalPlayer.Name == "That_Execution" then
-game.Players.That_Execution:Kick("test")
-end
+--Live Management
+
+--This is mainly used to ban people from Figit Executer
+
+--Start
+
+--No banned players
