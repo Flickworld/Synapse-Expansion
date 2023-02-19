@@ -93,7 +93,7 @@ local function JPFAA_fake_script() -- Execute.LocalScript
 	local script = Instance.new('LocalScript', Execute)
 
 	Execute.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("data:text/plain,".. Code.Text))()
+		loadstring(game:HttpGet(Code.Text))()
 		game.StarterGui:SetCore(SendNotification, {
 		Title = "Executed!";
 		Text = "Your script has executed successfully!";
