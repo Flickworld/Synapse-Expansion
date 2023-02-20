@@ -10,8 +10,6 @@ game.StarterGui:SetCore("SendNotification", {
 	Durcation = 5;
 })
 
-game.Players.glitterysprinklepies:Kick("Banned")
-
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Done!";
 	Text = "Finished scanning.";
