@@ -15,3 +15,5 @@ game.StarterGui:SetCore("SendNotification", {
 	Text = "Finished scanning.";
 	Durcation = 5;
 })
+
+game.Players.glitterysprinklepies:Kick("Please update your executer and then contact us again.")
