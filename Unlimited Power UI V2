@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 
 local Window = Rayfield:CreateWindow({
    Name = "The Unlimited Power UI V2",
-   LoadingTitle = "Starting up...",
-   LoadingSubtitle = "by Core",
+   LoadingTitle = "Starting up beta version...",
+   LoadingSubtitle = "by Core"
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -14,7 +14,7 @@ local Window = Rayfield:CreateWindow({
       Invite = "", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Core's Ultimate Power UI",
       Subtitle = "Beta Code",
@@ -30,5 +30,39 @@ local Window = Rayfield:CreateWindow({
    Name = "Build A Boat For Treasure",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Flickworld/Figit-Executer/main/Auto-Grind-Hack-In-Build-A-Boat-For-Treasure"))()
+   Rayfield:Notify({
+   Title = "Build A Boat For Treasure",
+   Content = "Successfully Loaded Build A Boat For Treasure Hacks!",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
    end,
+   local Button = Tab:CreateButton({
+   Name = "Bedwars",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   Rayfield:Notify({
+   Title = "Bedwars",
+   Content = "Successfully Loaded Bedwars Hacks.",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+   end,
+   
    })
