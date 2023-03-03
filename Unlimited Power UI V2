@@ -24,4 +24,11 @@ local Window = Rayfield:CreateWindow({
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = "9+10=21&Figit"
    }
-})
+   })
+   local Tab = Window:CreateTab("Games", 4483362458)
+   local Button = Tab:CreateButton({
+   Name = "Build A Boat For Treasure",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Flickworld/Figit-Executer/main/Auto-Grind-Hack-In-Build-A-Boat-For-Treasure"))()
+   end,
+   })
