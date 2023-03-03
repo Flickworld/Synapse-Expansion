@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
+   Name = "The Unlimited Power UI V2",
    LoadingTitle = "Starting up...",
    LoadingSubtitle = "by Core",
    ConfigurationSaving = {
