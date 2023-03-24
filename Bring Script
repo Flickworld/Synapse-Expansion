@@ -1,19 +1,76 @@
-local CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-for i,x in pairs(game.Players:GetPlayers()) do
-if x.Name == Target then
-game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
-local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid:Clone()
-Humanoid.BreakJointsOnDeath = false
-game.Players.LocalPlayer.Character.Animate.Disabled = true
-game:GetService("Players").LocalPlayer.Character.Humanoid:Destroy()
-Humanoid.Parent = game:GetService("Players").LocalPlayer.Character
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-    if v:IsA("Tool") then
-        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool"))
-        firetouchinterest(v.Handle,x.Character.HumanoidRootPart,0)
-    end
+-- GUI to Lua
+-----
+-- Version: 2.0.
+-- Made by chrisopdemobiel.
+
+-- Instances:
+
+local BringUI = Instance.new("ScreenGui")
+local BringFrame = Instance.new("Frame")
+local Name = Instance.new("TextBox")
+local Bring = Instance.new("TextButton")
+
+--Properties:
+
+BringUI.Name = "BringUI"
+BringUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BringUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BringFrame.Name = "BringFrame"
+BringFrame.Parent = BringUI
+BringFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BringFrame.Position = UDim2.new(0.0545585081, 0, 0.102564104, 0)
+BringFrame.Size = UDim2.new(0, 262, 0, 101)
+
+Name.Name = "Name"
+Name.Parent = BringFrame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.Size = UDim2.new(0, 262, 0, 50)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Player (FULL USERNAME)"
+Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+Bring.Name = "Bring"
+Bring.Parent = BringFrame
+Bring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bring.Position = UDim2.new(0, 0, 0.495049506, 0)
+Bring.Size = UDim2.new(0, 262, 0, 50)
+Bring.Font = Enum.Font.SourceSans
+Bring.Text = "Bring (TOOL FROM GAME REQUIRED)"
+Bring.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bring.TextScaled = true
+Bring.TextSize = 14.000
+Bring.TextWrapped = true
+
+-- Scripts:
+
+local function LWSIUWT_fake_script() -- Bring.LocalScript 
+	local script = Instance.new('LocalScript', Bring)
+
+	Bring.MouseButton1Click:Connect(function()
+		local Target = Name.Text
+			local CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		for i,x in pairs(game.Players:GetPlayers()) do
+			if x.Name == Target then
+				game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid:Clone()
+				Humanoid.BreakJointsOnDeath = false
+				game.Players.LocalPlayer.Character.Animate.Disabled = true
+				game:GetService("Players").LocalPlayer.Character.Humanoid:Destroy()
+				Humanoid.Parent = game:GetService("Players").LocalPlayer.Character
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v:IsA("Tool") then
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool"))
+						firetouchinterest(v.Handle,x.Character.HumanoidRootPart,0)
+					end
+				end
+			end
+		end
+		game.Players.LocalPlayer.CharacterAdded:Wait():WaitForChild("Humanoid")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+	end)
 end
-end
-end
-game.Players.LocalPlayer.CharacterAdded:Wait():WaitForChild("Humanoid")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+coroutine.wrap(LWSIUWT_fake_script)()
