@@ -1,5 +1,4 @@
 local CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-local Target = TargettedPlayer
 for i,x in pairs(game.Players:GetPlayers()) do
 if x.Name == Target then
 game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
