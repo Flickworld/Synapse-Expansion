@@ -86,6 +86,7 @@ local function MBXJJT_fake_script() -- Start.LocalScript
 
 	Start.MouseButton1Click:Connect(function()
 		Start.Text = "Loading..."
+		wait(2)
 		--Made by Figit Scripts
 		--Network Library by 4eyes
 		--Coding Made by rouzhaver
