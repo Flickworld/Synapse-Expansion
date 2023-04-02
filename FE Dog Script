@@ -1,5 +1,4 @@
 --[[
-    script made by MyWorld#4430
 
     recommended hats:
     https://www.roblox.com/catalog/62234425/Brown-Hair
@@ -10,7 +9,6 @@
     https://www.roblox.com/catalog/48474313/Red-Roblox-Cap
     https://www.roblox.com/catalog/376527115/Jade-Necklace-with-Shell-Pendant
 
-    discord.gg/pYVHtSJmEY - MORE OP SCRIPTS
 ]]
 
 local netboost = Vector3.new(0, -25.05, 0) --set to false or nil to disable
